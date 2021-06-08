@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "styleNull.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
 .preloader {
   /*фиксированное позиционирование*/
   position: fixed;
@@ -165,7 +165,7 @@
 }
 
 .menu {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -344,6 +344,14 @@
 }
 .vibor .container {
   text-align: center;
+}
+.vibor .container h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 130%;
+  color: #252526;
 }
 .vibor .container #view {
   width: 0%;
@@ -792,5 +800,91 @@
   }
   .header .timer .clock div:nth-child(2) {
     margin: 0 21px;
+  }
+
+  .vibor .active h2 {
+    font-weight: bold;
+    border-bottom: 1px solid #06D0A8;
+    border-right: 1px solid #06D0A8;
+  }
+  .vibor .container {
+    text-align: center;
+  }
+  .vibor .container h1 {
+    font-size: 40px;
+    line-height: 130%;
+  }
+  .vibor .container h1 span {
+    font-style: italic;
+  }
+  .vibor .container #view {
+    width: 0%;
+    overflow: hidden;
+  }
+  .vibor .container #style {
+    width: 0%;
+    overflow: hidden;
+  }
+  .vibor .container #purpose {
+    width: 100%;
+    overflow: hidden;
+  }
+  .vibor .container .gallerys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .vibor .container .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vibor .container .gallery .item {
+    padding: 0px;
+  }
+  .vibor .container .gallery .item h2 {
+    font-size: 17px;
+    padding: 0 7px;
+    margin: 0 20px 15px 0;
+  }
+  .vibor .container .gallery .item:hover h2 {
+    font-weight: bold;
+    border-bottom: 1px solid #06D0A8;
+    border-right: 1px solid #06D0A8;
+  }
+  .vibor .container h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: #252526;
+  }
+  .vibor .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: auto;
+    width: 110%;
+    padding: 0 30px;
+  }
+  .vibor .container .nav h2 {
+    font-size: 13.4151px;
+    padding: 13px;
+    margin: 0px;
+  }
+  .vibor .container .nav h2:hover {
+    border-bottom: 1px solid #06D0A8;
+    border-right: 1px solid #06D0A8;
   }
 }
