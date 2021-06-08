@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СТИЛЬНЫЙ ДОМ</title>
+    <link type="image/x-icon" rel="shortcut icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+    <div class="block" style="display: none;">
+        <img src="img/vibor/view/1.jpg" alt="">
+        <img src="img/vibor/view/2.jpg" alt="">
+        <img src="img/vibor/view/3.jpg" alt="">
+        <img src="img/vibor/view/4.jpg" alt="">
+        <img src="img/vibor/view/5.jpg" alt="">
+        <img src="img/vibor/view/6.jpg" alt="">
+        <img src="img/vibor/purpose/1.jpg" alt="">
+        <img src="img/vibor/purpose/2.jpg" alt="">
+        <img src="img/vibor/purpose/3.jpg" alt="">
+        <img src="img/vibor/purpose/4.jpg" alt="">
+        <img src="img/vibor/purpose/5.jpg" alt="">
+        <img src="img/vibor/purpose/6.jpg" alt="">
+        <img src="img/vibor/style/1.jpg" alt="">
+        <img src="img/vibor/style/2.jpg" alt="">
+        <img src="img/vibor/style/3.jpg" alt="">
+        <img src="img/vibor/style/4.jpg" alt="">
+        <img src="img/vibor/style/5.jpg" alt="">
+        <img src="img/vibor/style/6.jpg" alt="">
+    </div>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="container">
+                <div class="logo-adress">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="">
+                        <div class="logo__text">
+                            <p class="p1">СТИЛЬНЫЙ ДОМ</p>
+                            <p class="p2">студия текстильного дизайна</p>
+                        </div>
+                    </div>
+                    <div class="adress">
+                        <p>г. Москва, ул. Таганская 31/22</p>
+                        <p>с 10 до 20, вс до 18</p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src="img/phone.svg" alt="">
+                    <div class="phone__tel">
+                        <p>+7 |495| 988 01 28</p>
+                        <p>+7 |903| 780 71 35</p>
+                    </div>
+                    <a href=""><img class="img-hover" src="img/watcap.svg" alt=""></a>
+                    <a href=""><img class="img-hover" src="img/Viber.svg" alt=""></a>
+                    <button class="but1">заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <p>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+                <h1>Бесплатный<span>*</span><br>пошив штор</h1>
+                <h2>Вы платите только за ткани</h2>
+                <button class="but2">заказать пошив</button><br>
+                <div class="timer">
+                    <h3>до конца акции осталось</h3>
+                    <div class="clock">
+                        <div><span   id="hours">00</span><p>часов</p></div>
+                        <div><span  id="minute">00</span><p>минут</p></div>
+                        <div><span id="seconds">00</span><p>секунд</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vibor">
+            <div class="container">
+                <h1>Какие шторы<br>вам нужны?</h1>
+                <nav>
+                    <div class="nav" id="gallery-nav-view"><h2>по виду</h2></div>
+                    <div class="nav" id="gallery-nav-purpose"><h2>по назначению</h2></div>
+                    <div class="nav" id="gallery-nav-style"><h2>по стилю</h2></div>
+                </nav>
+                <div class="gallery">
+                    <div id="item-tit1" class="item">
+                        <img src="img/vibor/view/1.jpg" alt="">
+                        <h2 >Для гостинной</h2>
+                    </div>
+                    <div id="item-tit2" class="item">
+                        <img src="img/vibor/1.jpg" alt="">
+                        <h2 >Для спальни</h2>
+                    </div>
+                    <div id="item-tit3" class="item">
+                        <img src="img/vibor/1.jpg" alt="">
+                        <h2 >Для кухни</h2>
+                    </div>
+                    <div id="item-tit4" class="item">
+                        <img src="img/vibor/1.jpg" alt="">
+                        <h2 >Для детской</h2>
+                    </div>
+                    <div id="item-tit5" class="item">
+                        <img src="img/vibor/1.jpg" alt="">
+                        <h2 >Для кабинета</h2>
+                    </div>
+                    <div id="item-tit6" class="item">
+                        <img src="img/vibor/1.jpg" alt="">
+                        <h2 >Для организаций</h2>
+                    </div>
+                </div>
+                
+                <button class="but1">узнать стоимость <span id="gallery-but">для гостинной</span></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
